@@ -11,7 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Your custom CSS -->
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- My custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -121,60 +123,92 @@ if (isset($page_content)) {
 ?>
 
 <!-- Footer -->
-<footer>
+<footer class="py-4">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 data-i18n="quick_links">Quick Links</h3>
-                <ul>
-                    <li><a href="#" data-i18n="rti">RTI</a></li>
-                    <li><a href="#" data-i18n="tenders">Tenders</a></li>
-                    <li><a href="#" data-i18n="careers">Careers</a></li>
-                    <li><a href="#" data-i18n="sitemap">Sitemap</a></li>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="footer-heading">USEFUL LINKS</h3>
+                <ul class="footer-links">
+                    <li><a href="/archives">Archives</a></li>
+                    <li><a href="/policies">Website Policies</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <li><a href="./directory.php">Contact Us</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                    <li><a href="/related-links">Related Links</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3 data-i18n="important_links">Important Links</h3>
-                <ul>
-                    <li><a href="#" data-i18n="ministry_of_coal">Ministry of Coal</a></li>
-                    <li><a href="#" data-i18n="coal_india_ltd">Coal India Limited</a></li>
-                    <li><a href="#" data-i18n="make_in_india">Make in India</a></li>
-                    <li><a href="#" data-i18n="mygov">MyGov</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3 data-i18n="contact_us">Contact Us</h3>
-                <ul>
-                    <li data-i18n="company_name">Mahanadi Coalfields Limited</li>
-                    <li data-i18n="mcl_bhawan">MCL Bhawan</li>
-                    <li data-i18n="burla_sambalpur">Burla, Sambalpur</li>
-                    <li data-i18n="odisha_pin">Odisha - 768020</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3 data-i18n="follow_us">Follow Us</h3>
+            <div class="col-md-4 text-center">
+                <h3 class="footer-heading">SUBSCRIBE FOR UPDATES</h3>
                 <div class="social-links">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/MCL_INDIA_LTD" target="_blank" class="social-icon" title="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/" target="_blank" class="social-icon" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/MahandiCoalfield/" target="_blank" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-end">
+                <div class="portal-links">
+                    <a href="https://www.mygov.in/" target="_blank" class="portal-link">
+                        <img src="images/mygov.png" alt="MyGov Portal" class="img-fluid">
+                    </a>
+                    <a href="https://www.india.gov.in/" target="_blank" class="portal-link">
+                        <img src="images/indiaportal.png" alt="India Portal" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+           
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-0">This Website belongs to Mahanadi Coalfields Limited, Government of India</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p class="mb-0 last-updated">Last Updated: <?php echo date('d.m.Y'); ?></p>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="copyright">&copy; 2024 Mahanadi Coalfields Limited. All rights reserved.</p>
-            <p data-i18n="site_credits">This site is designed, developed and maintained by MCL</p>
-        </div>
-    </div>
-    <div id="cookie-popup" style="display: none;">
-        <div class="cookie-container">
-            <p data-i18n="cookie_message">
-            We use cookies to ensure that we give you the best experience on our website. 
-            If you continue to use this site we will assume that you are happy with it.
-            </p>
-            <button id="accept-cookies" data-i18n="accept">Accept</button>
-        </div>
     </div>
 </footer>
+
+<!-- Accessibility Panel -->
+<div class="accessibility-panel" id="accessibilityPanel">
+    <div class="accessibility-header">
+        <h3>Accessibility Options</h3>
+        <button id="closeAccessibilityPanel" class="close-panel" aria-label="Close accessibility panel">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="accessibility-controls">
+        <table>
+            <tr>
+                <td><button id="darkContrastBtn" title="Toggle dark contrast">Dark Contrast</button></td>
+                <td><button id="invertBtn" title="Invert colors">Invert Colors</button></td>
+            </tr>
+            <tr>
+                <td><button id="saturationBtn" title="Increase saturation">High Saturation</button></td>
+                <td><button id="highlightLinksBtn" title="Highlight links">Highlight Links</button></td>
+            </tr>
+            <tr>
+                <td><button id="increaseTextBtn" title="Increase text size">Increase Text</button></td>
+                <td><button id="decreaseTextBtn" title="Decrease text size">Decrease Text</button></td>
+            </tr>
+            <tr>
+                <td><button id="hideImagesBtn" title="Hide images">Hide Images</button></td>
+                <td><button id="defaultCursorBtn" title="Use default cursor">Default Cursor</button></td>
+            </tr>
+        </table>
+        <button id="resetAccessibility" class="reset-button">Reset All</button>
+    </div>
+</div>
 
 <!-- Cookie Consent Bar -->
 <div class="CookieConsent" id="cookieConsentBar">
@@ -189,11 +223,11 @@ if (isset($page_content)) {
         <button id="rcc-decline-button" aria-label="Decline optional cookies" data-i18n="decline_cookies">Decline optional cookies</button>
         <button class="custom-button-wrapper" id="rcc-confirm-button" aria-label="Accept all cookies" data-i18n="accept_all_cookies">Accept all cookies</button>
     </div>
-</div>
-
-<!-- Bootstrap JS Bundle (with Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Your custom JS -->
-<script src="script.js"></script>
+</div>    <!-- Custom Footer CSS -->
+    <link rel="stylesheet" href="footer.css">
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>

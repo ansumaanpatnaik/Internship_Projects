@@ -190,6 +190,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageSelect = document.querySelector('#languageDropdown select');
     if (languageSelect) {
         languageSelect.value = savedLang;
+    }    // --- Announcements Pause Button ---
+    const pauseBtn = document.querySelector('.announcement-pause-btn');
+    const scrollContent = document.querySelector('.announcement-scroll');
+    
+    if (pauseBtn && scrollContent) {
+        // Initialize button state
+        const updatePauseButton = (isPaused) => {
+            pauseBtn.classList.toggle('paused', isPaused);
+            pauseBtn.setAttribute('title', isPaused ? 'Resume announcements' : 'Pause announcements');
+            pauseBtn.setAttribute('aria-label', isPaused ? 'Resume announcements' : 'Pause announcements');
+            scrollContent.classList.toggle('paused', isPaused);
+        };
+
+        pauseBtn.addEventListener('click', function() {
+            const willBePaused = !this.classList.contains('paused');
+            updatePauseButton(willBePaused);
+        });
+
+        // Initialize with running state
+        updatePauseButton(false);
     }
 
     // --- Slider logic ---
@@ -685,31 +705,48 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     updateScrollBtnVisibility();
     window.addEventListener('resize', updateScrollBtnVisibility);
+}); // End of previous event listener block
 
-    // --- Cookie Consent Bar Logic (NIC Style) ---
-    var consentBar = document.getElementById('cookieConsentBar');
-    if (consentBar) {
-        if (localStorage.getItem('cookieConsent') === 'accepted' || localStorage.getItem('cookieConsent') === 'declined') {
-            consentBar.style.display = 'none';
-        } else {
-            consentBar.style.display = 'flex';
+// Cookie Consent Bar Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const consentBar = document.getElementById('cookieConsentBar');
+    const acceptBtn = document.getElementById('rcc-confirm-button');
+    const declineBtn = document.getElementById('rcc-decline-button');
+
+    console.log('Initial elements:', { consentBar, acceptBtn, declineBtn });
+
+    function handleCookieConsent(accepted) {
+        console.log('Cookie consent:', accepted ? 'accepted' : 'declined');
+        if (consentBar) {
+            consentBar.style.cssText = 'display: none !important';
+            document.cookie = `cookieConsent=${accepted ? 'accepted' : 'declined'}; path=/; max-age=${365*24*60*60}`;
+            localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined');
         }
-        
-        var acceptBtn = document.getElementById('rcc-confirm-button');
-        var declineBtn = document.getElementById('rcc-decline-button');
-        
-        if (acceptBtn) {
-            acceptBtn.onclick = function() {
-                localStorage.setItem('cookieConsent', 'accepted');
-                consentBar.style.display = 'none';
-            };
-        }
-        
-        if (declineBtn) {
-            declineBtn.onclick = function() {
-                localStorage.setItem('cookieConsent', 'declined');
-                consentBar.style.display = 'none';
-            };
-        }
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Accept clicked');
+            handleCookieConsent(true);
+            return false;
+        });
+    }
+
+    if (declineBtn) {
+        declineBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Decline clicked');
+            handleCookieConsent(false);
+            return false;
+        });
+    }
+
+    // Check if we already have consent
+    const hasConsent = document.cookie.split(';').some(item => item.trim().startsWith('cookieConsent=')) 
+        || localStorage.getItem('cookieConsent');
+
+    if (hasConsent && consentBar) {
+        consentBar.style.cssText = 'display: none !important';
     }
 });
