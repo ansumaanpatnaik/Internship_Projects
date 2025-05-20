@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navigationSection">
+            <div class="navigationSection" style="margin-top:-10px;z-index:3000;">
                 <div class="innernav position-relative d-flex justify-content-between">
                     <ul class="nav">
                         <li class="nav-item"><a class="nav-link" title="ACTs" href="#" data-i18n="acts_tab">ACTs</a></li>

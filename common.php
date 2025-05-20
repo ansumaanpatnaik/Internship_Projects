@@ -22,8 +22,8 @@
     <div class="container">
         <div class="govt-info">
             <img src="images/indflag.svg" alt="Indian Flag" class="ind-flag">
-            <span class="hindi-text" data-i18n="bharat_sarkar">भारत सरकार</span>
-            <span class="eng-text" data-i18n="govt_of_india">Government of India</span>
+            <span class="hindi-text" >भारत सरकार</span>
+            <span class="eng-text" >Government of India</span>
         </div>
         <div class="accessibility-options">
             <a href="#main-content" class="access-btn" title="Skip to main content">
@@ -74,7 +74,7 @@
             <span></span>
         </button>
         <ul class="main-menu">
-            <li><a href="#" data-i18n="home">Home</a></li>
+            <li><a href="./index.php" data-i18n="home">Home</a></li>
             <li class="dropdown">
                 <a href="#" data-i18n="about_us">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
@@ -94,6 +94,15 @@
                     <li><a href="#" data-i18n="production_areas">Production Areas</a></li>
                 </ul>
             </li>
+            <li class="dropdown">
+                <a href="#" data-i18n="services">Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-i18n="marketing_and_sales">Marketing & Sales</a></li>
+                    <li><a href="#" data-i18n="to_get_coal_from_mcl">To Get Coal from MCL</a></li>
+                    <li><a href="#" data-i18n="quality_of_coal">Quality of Coal</a></li>
+                    <li><a href="#" data-i18n="iso/ohsas_certification">ISO/OHSAS Certification</a></li>
+                </ul>
+            </li>
             <li><a href="#" data-i18n="rti_act">RTI Act</a></li>
             <li class="dropdown">
                 <a href="#" data-i18n="grievances">Grievances <i class="fas fa-chevron-down"></i></a>
@@ -103,14 +112,28 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" data-i18n="news_media">News & Media <i class="fas fa-chevron-down"></i></a>
+                <a href="#" data-i18n="documents">Documents<i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" data-i18n="notices">Notices</a></li>
-                    <li><a href="#" data-i18n="public_relations">Public Relations</a></li>
+                    <li><a href="#" data-i18n="financial_and_secretarial_matter">Financial & Secretarial Matter</a></li>
+                    <li><a href="#" data-i18n="environment_and_forest">Environment & Forest</a></li>
                 </ul>
             </li>
-            <li><a href="./infobank.php" data-i18n="info_bank">Info Bank</a></li>
-            <li><a href="#" data-i18n="careers">Careers</a></li>
+            <li class="dropdown">
+                <a href="#" data-i18n="employee_corner">Employee Corner<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-i18n="systems_helpdesk">Systems Helpdesk</a></li>
+                    <li><a href="#" data-i18n="mcl_intranet">MCL Intranet</a></li>
+                    <li><a href="#" data-i18n="innovation_cell">Innovation Cell</a></li>
+                    <li><a href="#" data-i18n="csr_portal">CSR Portal</a></li>
+                    <li><a href="#" data-i18n="soochna_kosh">Soochna Kosh Portal</a></li>
+                    <li><a href="#" data-i18n="arpan_portal">Arpan Portal</a></li>
+                    <li><a href="#" data-i18n="mcl_vts">MCL VTS</a></li>
+                    <li><a href="#" data-i18n="tender_below_2lakhs">Tender Below 2 lakhs Portal</a></li>
+                    <li><a href="#" data-i18n="bill_tracking">Bill Tracking System</a></li>
+                    <li><a href="#" data-i18n="mcl_call_centre">MCL Call Centre</a></li>
+                    <li><a href="./infobank.php" data-i18n="info_bank">Info Bank</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
@@ -123,58 +146,72 @@ if (isset($page_content)) {
 ?>
 
 <!-- Footer -->
-<footer class="py-4">
+<footer>
     <div class="container">
-        <div class="row">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h3 class="footer-heading">USEFUL LINKS</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Archives</a></li>
+                            
+                            <li><a href="#">Sitemap</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3 class="footer-heading">    </h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Website Policies</a></li>
+                            
+                            <li><a href="#">Help</a></li>
+                    
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3 class="footer-heading">    </h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Related Links</a></li>
+                            <li><a href="./directory.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4">
-                <h3 class="footer-heading">USEFUL LINKS</h3>
-                <ul class="footer-links">
-                    <li><a href="/archives">Archives</a></li>
-                    <li><a href="/policies">Website Policies</a></li>
-                    <li><a href="/help">Help</a></li>
-                    <li><a href="./directory.php">Contact Us</a></li>
-                    <li><a href="/sitemap">Sitemap</a></li>
-                    <li><a href="/related-links">Related Links</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-center">
-                <h3 class="footer-heading">SUBSCRIBE FOR UPDATES</h3>
-                <div class="social-links">
-                    <a href="https://twitter.com/MCL_INDIA_LTD" target="_blank" class="social-icon" title="X (Twitter)">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/" target="_blank" class="social-icon" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://www.facebook.com/MahandiCoalfield/" target="_blank" class="social-icon" title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="social-icon" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <h3 class="footer-heading">Subscribe for Updates</h3>
+                <div class="social-box mb-4">
+                    <div class="social-links">
+                        <a href="#" class="social-icon me-3" title="X (Twitter)">
+                            <img src="images/twitter.png" alt="X (Twitter)" width="32" height="32">
+                        </a>
+                        <a href="#" class="social-icon me-3" title="YouTube">
+                            <img src="images/youtube.png" alt="YouTube" width="32" height="32">
+                        </a>
+                        <a href="#" class="social-icon me-3" title="Facebook">
+                            <img src="images/facebook.png" alt="Facebook" width="32" height="32">
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <img src="images/instagram.png" alt="Instagram" width="32" height="32">
+                        </a>
+                    </div>
+                </div>
+                <div class="portals-box">
+                    <div class="d-flex justify-content-between mb-3">
+                        <a href="https://www.mygov.in/" target="_blank" class="portal-link">
+                            <img src="images/mygov.png" alt="MyGov Portal" style="height: 40px;">
+                        </a>
+                        <a href="https://www.india.gov.in/" target="_blank" class="portal-link">
+                            <img src="images/indiaportal.svg" alt="India Portal" style="height: 40px;">
+                        </a>
+                    </div>
+                    <p class="text-end mb-0 last-updated">Last Updated On: <?php echo date('d.m.Y'); ?></p>
                 </div>
             </div>
-            <div class="col-md-4 text-end">
-                <div class="portal-links">
-                    <a href="https://www.mygov.in/" target="_blank" class="portal-link">
-                        <img src="images/mygov.png" alt="MyGov Portal" class="img-fluid">
-                    </a>
-                    <a href="https://www.india.gov.in/" target="_blank" class="portal-link">
-                        <img src="images/indiaportal.png" alt="India Portal" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-           
-        <div class="footer-divider"></div>
+        </div>
         <div class="footer-bottom">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p class="mb-0">This Website belongs to Mahanadi Coalfields Limited, Government of India</p>
-                </div>
-                <div class="col-md-4 text-end">
-                    <p class="mb-0 last-updated">Last Updated: <?php echo date('d.m.Y'); ?></p>
-                </div>
-            </div>
+            <p class="text-center mb-0">This Website belongs to Ministry of Electronics and Information Technology, Government of India</p>
         </div>
     </div>
 </footer>
@@ -224,7 +261,7 @@ if (isset($page_content)) {
         <button class="custom-button-wrapper" id="rcc-confirm-button" aria-label="Accept all cookies" data-i18n="accept_all_cookies">Accept all cookies</button>
     </div>
 </div>    <!-- Custom Footer CSS -->
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap JS Bundle (with Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Your custom JS -->
