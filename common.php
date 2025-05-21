@@ -268,7 +268,7 @@ if (isset($page_content)) {
     <script src="script.js"></script>
 
 <!-- Go to Top Button -->
-<button id="goToTopBtn" title="Go to top" aria-label="Go to top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:99999;background:#1a237e;color:#fff;border:none;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 2px 8px rgba(26,35,126,0.15);cursor:pointer;transition:background 0.2s,transform 0.2s;outline:none;"><i class="fas fa-arrow-up"></i></button>
+<button id="goToTopBtn" title="Go to top" aria-label="Go to top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:99999;background:#0f5757;color:#fff;border:none;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 2px 8px rgba(26,35,126,0.15);cursor:pointer;transition:background 0.2s,transform 0.2s;outline:none;"><i class="fas fa-arrow-up"></i></button>
 <script>
 // Go to Top Button functionality
 const goToTopBtn = document.getElementById('goToTopBtn');

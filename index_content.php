@@ -82,6 +82,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
@@ -174,49 +175,7 @@
 
         <section class="meity-section">
 
-    <!-- Recent Documents -->
-    <div class="meity-box">
-      <h2>Recent Documents</h2>
-      <div class="meity-card">
-        <h3>Orders And Notices</h3>
-        <p>Chief Information Officer, MeitY</p>
-      </div>
-      <div class="meity-card">
-        <h3>Orders And Notices</h3>
-        <p>Revised work distribution amongst Group Coordinators/HAG level officers in MeitY & Link Officer arrangement</p>
-      </div>
-      <div class="meity-card">
-        <h3>Guideline</h3>
-        <p>Annexure DPR Template World Bank Assisted projects</p>
-      </div>
-      <div class="meity-card">
-        <h3>Act And Policies</h3>
-        <p>Draft Digital Personal Data Protection Rules, 2025</p>
-      </div>
-    </div>
-
-    <!-- Explore User Personas -->
-    <div class="meity-box meity-persona">
-      <h2>Explore User Personas</h2>
-      <img src="https://www.meity.gov.in/sites/upload_files/dit/files/user_persona_female.svg" alt="For Media" />
-      <span>FOR MEDIA</span>
-    </div>
-
-    <!-- Important Links -->
-    <div class="meity-box">
-      <h2>Important Links</h2>
-      <ul class="meity-link-list">
-        <li><a href="#">MeitY Dashboard <span>&rarr;</span></a></li>
-        <li><a href="#">Interested in Applying for Tender? <span>&rarr;</span></a></li>
-        <li><a href="#">Public Grievances <span>&rarr;</span></a></li>
-        <li><a href="#">Section 69A of IT Act <span>&rarr;</span></a></li>
-        <li><a href="#">Explore What's new <span>&rarr;</span></a></li>
-      </ul>
-    </div>
-
-  </section>
-</div>
-<!-- End MeitY-style Section -->
+    
         <!-- In Social Media Section -->
         <section class="in-social-media-section">
             <h2 class="social-media-title"><i class="fas fa-globe"></i> <span data-i18n="in_social_media">In Social Media</span></h2>
@@ -250,4 +209,117 @@
             </div>
         </section>
     </div>
+    <div class="row me-0 ms-0 pt-5 justify-content-center align-items-center greybg homeLogoSlider">
+        <div class="col-lg-8">
+            <div class="brand-cards">
+                <div class="logo-slider">
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/8b06743a65b0f1b2e4fc1e108a766f03.png" alt="Digital India" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/10/df37a3b3f15435f182e453c420193a4a.svg" alt="NeGD" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/49e6a2f25acc32a4897ab9120e91650e.png" alt="Bhashini" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/0f7305aece1ddf7e4f83dc74f79b942e.png" alt="UMANG" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/6bf78ff5123eb08272e587f06bc3cd69.png" alt="MyGov" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/4d38a7c059c026874483cd5cfcbac633.png" alt="NIC" class="img-fluid" />
+                    </div>
+                    <div>
+                        <img src="https://www.meity.gov.in/static/uploads/2024/02/7c54c94540ce37a1e3e8120b52f72060.png" alt="STQC" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+    .logo-slider .slick-slide {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .logo-slider img {
+        max-height: 70px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    /* Custom slick arrow styles to match meity.gov.in */
+    .logo-slider .slick-arrow {
+        background: #fff !important;
+        border: 1px solid #e0e0e0 !important;
+        border-radius: 50% !important;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+        width: 40px;
+        height: 40px;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background 0.2s, border 0.2s;
+    }
+    .logo-slider .slick-arrow:before {
+        color: #1d4e9e !important;
+        font-size: 22px;
+        opacity: 1;
+    }
+    .logo-slider .slick-prev {
+        left: -55px;
+    }
+    .logo-slider .slick-next {
+        right: -55px;
+    }
+    .logo-slider .slick-arrow:hover, 
+    .logo-slider .slick-arrow:focus {
+        background: #e6f0fa !important;
+        border-color: #1d4e9e !important;
+        outline: none;
+    }
+    @media (max-width: 992px) {
+        .logo-slider .slick-prev { left: -30px; }
+        .logo-slider .slick-next { right: -30px; }
+    }
+    @media (max-width: 600px) {
+        .logo-slider .slick-prev, .logo-slider .slick-next {
+            left: 0 !important;
+            right: 0 !important;
+            top: auto;
+            bottom: -45px;
+            transform: none;
+        }
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.logo-slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: { slidesToShow: 3 }
+                },
+                {
+                    breakpoint: 600,
+                    settings: { slidesToShow: 2 }
+                }
+            ]
+        });
+    });
+    </script>
 </main>
