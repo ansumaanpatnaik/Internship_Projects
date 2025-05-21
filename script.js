@@ -88,7 +88,7 @@ const translations = {
     bharat_sarkar: "भारत सरकार",
     site_title: "महानदी कोलफील्ड्स लिमिटेड",
     about_us: "हमारे बारे में",
-    english_option: "अंग्रेज़ी",
+    english_option: "अंग्रे़ी",
     hindi_option: "हिंदी",
     goi_enterprise: "भारत सरकार का उपक्रम",
     home: "मुखपृष्ठ",
@@ -749,4 +749,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (hasConsent && consentBar) {
         consentBar.style.cssText = 'display: none !important';
     }
+});
+
+document.getElementById('sliderButton').addEventListener('click', function() {
+    const navigationSection = document.querySelector('.navigationSection');
+    navigationSection.style.transition = 'transform 0.5s ease';
+    navigationSection.style.transform = 'translateX(100%)'; // Adjust the value as needed
 });

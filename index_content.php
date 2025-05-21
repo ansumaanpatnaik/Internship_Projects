@@ -172,7 +172,51 @@
             </section>
         </div>
 
-        
+        <section class="meity-section">
+
+    <!-- Recent Documents -->
+    <div class="meity-box">
+      <h2>Recent Documents</h2>
+      <div class="meity-card">
+        <h3>Orders And Notices</h3>
+        <p>Chief Information Officer, MeitY</p>
+      </div>
+      <div class="meity-card">
+        <h3>Orders And Notices</h3>
+        <p>Revised work distribution amongst Group Coordinators/HAG level officers in MeitY & Link Officer arrangement</p>
+      </div>
+      <div class="meity-card">
+        <h3>Guideline</h3>
+        <p>Annexure DPR Template World Bank Assisted projects</p>
+      </div>
+      <div class="meity-card">
+        <h3>Act And Policies</h3>
+        <p>Draft Digital Personal Data Protection Rules, 2025</p>
+      </div>
+    </div>
+
+    <!-- Explore User Personas -->
+    <div class="meity-box meity-persona">
+      <h2>Explore User Personas</h2>
+      <img src="https://www.meity.gov.in/sites/upload_files/dit/files/user_persona_female.svg" alt="For Media" />
+      <span>FOR MEDIA</span>
+    </div>
+
+    <!-- Important Links -->
+    <div class="meity-box">
+      <h2>Important Links</h2>
+      <ul class="meity-link-list">
+        <li><a href="#">MeitY Dashboard <span>&rarr;</span></a></li>
+        <li><a href="#">Interested in Applying for Tender? <span>&rarr;</span></a></li>
+        <li><a href="#">Public Grievances <span>&rarr;</span></a></li>
+        <li><a href="#">Section 69A of IT Act <span>&rarr;</span></a></li>
+        <li><a href="#">Explore What's new <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+
+  </section>
+</div>
+<!-- End MeitY-style Section -->
         <!-- In Social Media Section -->
         <section class="in-social-media-section">
             <h2 class="social-media-title"><i class="fas fa-globe"></i> <span data-i18n="in_social_media">In Social Media</span></h2>

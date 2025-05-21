@@ -161,7 +161,7 @@ if (isset($page_content)) {
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <h3 class="footer-heading">    </h3>
+                        <h3 class="footer-heading"> </h3>
                         <ul class="footer-links">
                             <li><a href="#">Website Policies</a></li>
                             
@@ -171,7 +171,7 @@ if (isset($page_content)) {
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <h3 class="footer-heading">    </h3>
+                        <h3 class="footer-heading"> </h3>
                         <ul class="footer-links">
                             <li><a href="#">Related Links</a></li>
                             <li><a href="./directory.php">Contact Us</a></li>
@@ -266,5 +266,22 @@ if (isset($page_content)) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Your custom JS -->
     <script src="script.js"></script>
+
+<!-- Go to Top Button -->
+<button id="goToTopBtn" title="Go to top" aria-label="Go to top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:99999;background:#1a237e;color:#fff;border:none;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 2px 8px rgba(26,35,126,0.15);cursor:pointer;transition:background 0.2s,transform 0.2s;outline:none;"><i class="fas fa-arrow-up"></i></button>
+<script>
+// Go to Top Button functionality
+const goToTopBtn = document.getElementById('goToTopBtn');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) {
+        goToTopBtn.style.display = 'flex';
+    } else {
+        goToTopBtn.style.display = 'none';
+    }
+});
+goToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
 </html>
