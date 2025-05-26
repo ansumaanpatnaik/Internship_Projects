@@ -1,216 +1,217 @@
-const translations = {
-  en: {
-    govt_of_india: "Government of India",
-    bharat_sarkar: "Government of India",
-    site_title: "Mahanadi Coalfields Limited",
-    about_us: "About Us",
-    english_option: "English",
-    hindi_option: "Hindi",
-    goi_enterprise: "A Government of India Enterprise",
-    home: "Home",
-    acts_heading: "ACTs",
-    acts_tab: "ACTs",
-    manuals_tab: "Manuals",
-    rules_tab: "Rules",
-    circulars_tab: "Circulars",
-    standing_orders_tab: "Standing Orders",
-    mou_tab: "MOU",
-    policies_tab: "Policies",
-    dop_tab: "DOP",
-    staff_seniority_tab: "Staff Seniority List",
-    posh_tab: "PoSH Act, 2013",
-    wips_tab: "WIPS MCL",
-    guidelines_tab: "Guidelines",
-    vigilance_tab: "Vigilance Related",
-    learn_more: "Learn More",
-    sustainable_mining: "Sustainable Mining",
-    sustainable_mining_desc: "Leading the way in environmentally responsible mining practices while maintaining high production standards.",
-    our_approach: "Our Approach",
-    community_development: "Community Development",
-    community_development_desc: "Empowering local communities through comprehensive CSR initiatives and sustainable development programs.",
-    csr_activities: "CSR Activities",
-    announcements: "Announcements",
-    welcome_msg: "Welcome to Mahanadi Coalfields Limited - A Government of India Enterprise",
-    latest_tender: "Latest Tender: Supply of Mining Equipment - Last Date: 30th April 2024",
-    recruitment_drive: "Recruitment Drive: Applications Open for Various Positions - Apply Now!",
-    csr_initiative: "CSR Initiative: New Community Development Program Launched",
-    safety_first: "Safety First: Annual Safety Week Celebration from 1st to 7th May 2024",
-    about_mcl: "About MCL",
-    about_mcl_desc: "Mahanadi Coalfields Limited (MCL) is one of the leading coal producing companies in India. It is a subsidiary of Coal India Limited, under the Ministry of Coal, Government of India. MCL is responsible for coal mining and production in the Mahanadi area, contributing significantly to the energy security and industrial development of the country. The company is committed to sustainable mining practices, community development, and environmental protection, maintaining a balance between energy needs and ecological preservation.",
-    formation: "Formation",
-    admin_setup: "Administrative Setup",
-    board_of_directors: "Board of Directors",
-    bioprofile_projects: "Bioprofile of Projects",
-    corp_mgmt_policy: "Corporate Mgmt. Policy",
-    manpower: "Manpower",
-    coal_production: "Coal Production",
-    productivity: "Productivity",
-    offtake: "Offtake",
-    safety: "Safety",
-    payment_exchequer: "Payment to Exchequer",
-    hq_departments: "HQ Departments",
-    production_areas: "Production Areas",
-    rti_act: "RTI Act",
-    grievances: "Grievances",
-    pg_portal: "PG Portal",
-    samvaad_portal: "Samvaad Portal",
-    news_media: "News & Media",
-    notices: "Notices",
-    public_relations: "Public Relations",
-    info_bank: "Info Bank",
-    careers: "Careers",
-    tenders: "Tenders",
-    quick_links: "Quick Links",
-    sitemap: "Sitemap",
-    important_links: "Important Links",
-    ministry_of_coal: "Ministry of Coal",
-    coal_india_ltd: "Coal India Limited",
-    make_in_india: "Make in India",
-    mygov: "MyGov",
-    contact_us: "Contact Us",
-    company_name: "Mahanadi Coalfields Limited",
-    mcl_bhawan: "MCL Bhawan",
-    burla_sambalpur: "Burla, Sambalpur",
-    odisha_pin: "Odisha - 768020",
-    follow_us: "Follow Us",
-    customize_cookies: "Customize cookies",
-    cookie_usage: "This website uses cookies to provide a better user experience.",
-    cookie_policy: "By clicking accept, you agree to the policies outlined in the",
-    cookie_settings: "Cookie Settings",
-    decline_cookies: "Decline optional cookies",
-    accept_all_cookies: "Accept all cookies",
-    accept: "Accept",
-    powering_growth: "Powering India's Growth",
-    mcl_commitment: "Mahanadi Coalfields Limited is committed to sustainable coal production, ensuring energy security and contributing to India's industrial growth."
-  },
-  hi: {
-    govt_of_india: "भारत सरकार",
-    bharat_sarkar: "भारत सरकार",
-    site_title: "महानदी कोलफील्ड्स लिमिटेड",
-    about_us: "हमारे बारे में",
-    english_option: "अंग्रे़ी",
-    hindi_option: "हिंदी",
-    goi_enterprise: "भारत सरकार का उपक्रम",
-    home: "मुखपृष्ठ",
-    acts_heading: "अधिनियम",
-    acts_tab: "अधिनियम",
-    manuals_tab: "मैनुअल",
-    rules_tab: "नियम",
-    circulars_tab: "परिपत्र",
-    standing_orders_tab: "स्थायी आदेश",
-    mou_tab: "एमओयू",
-    policies_tab: "नीतियाँ",
-    dop_tab: "डीओपी",
-    staff_seniority_tab: "कर्मचारी वरिष्ठता सूची",
-    posh_tab: "पॉश अधिनियम, 2013",
-    wips_tab: "डब्ल्यूआईपीएस एमसीएल",
-    guidelines_tab: "दिशानिर्देश",
-    vigilance_tab: "सतर्कता संबंधित",
-    learn_more: "और जानें",
-    sustainable_mining: "सतत खनन",
-    sustainable_mining_desc: "पर्यावरणीय रूप से जिम्मेदार खनन प्रथाओं में अग्रणी, उच्च उत्पादन मानकों के साथ।",
-    our_approach: "हमारा दृष्टिकोण",
-    community_development: "सामुदायिक विकास",
-    community_development_desc: "समग्र सीएसआर पहलों और सतत विकास कार्यक्रमों के माध्यम से स्थानीय समुदायों को सशक्त बनाना।",
-    csr_activities: "सीएसआर गतिविधियाँ",
-    announcements: "घोषणाएँ",
-    welcome_msg: "महानदी कोलफील्ड्स लिमिटेड में आपका स्वागत है - भारत सरकार का उपक्रम",
-    latest_tender: "नवीनतम निविदा: खनन उपकरण की आपूर्ति - अंतिम तिथि: 30 अप्रैल 2024",
-    recruitment_drive: "भर्ती अभियान: विभिन्न पदों के लिए आवेदन खुले हैं - अभी आवेदन करें!",
-    csr_initiative: "सीएसआर पहल: नया सामुदायिक विकास कार्यक्रम शुरू",
-    safety_first: "सुरक्षा पहले: वार्षिक सुरक्षा सप्ताह 1 से 7 मई 2024 तक",
-    about_mcl: "एमसीएल के बारे में",
-    about_mcl_desc: "महानदी कोलफील्ड्स लिमिटेड (एमसीएल) भारत की प्रमुख कोयला उत्पादक कंपनियों में से एक है। यह कोल इंडिया लिमिटेड की एक सहायक कंपनी है, जो कोयला मंत्रालय, भारत सरकार के अधीन है। एमसीएल महानदी क्षेत्र में कोयला खनन और उत्पादन के लिए जिम्मेदार है, जो देश की ऊर्जा सुरक्षा और औद्योगिक विकास में महत्वपूर्ण योगदान देता है। कंपनी सतत खनन प्रथाओं, सामुदायिक विकास और पर्यावरण संरक्षण के लिए प्रतिबद्ध है, जिससे ऊर्जा आवश्यकताओं और पारिस्थितिकी संरक्षण के बीच संतुलन बना रहे।",
-    formation: "गठन",
-    admin_setup: "प्रशासनिक सेटअप",
-    board_of_directors: "निदेशक मंडल",
-    bioprofile_projects: "परियोजनाओं की जीवनी",
-    corp_mgmt_policy: "कॉर्पोरेट प्रबंधन नीति",
-    manpower: "जनशक्ति",
-    coal_production: "कोयला उत्पादन",
-    productivity: "उत्पादकता",
-    offtake: "ऑफटेक",
-    safety: "सुरक्षा",
-    payment_exchequer: "राजकोष को भुगतान",
-    hq_departments: "मुख्यालय विभाग",
-    production_areas: "उत्पादन क्षेत्र",
-    rti_act: "सूचना का अधिकार अधिनियम",
-    grievances: "शिकायतें",
-    pg_portal: "पीजी पोर्टल",
-    samvaad_portal: "संवाद पोर्टल",
-    news_media: "समाचार और मीडिया",
-    notices: "सूचनाएँ",
-    public_relations: "जनसंपर्क",
-    info_bank: "सूचना बैंक",
-    careers: "करियर",
-    tenders: "निविदाएँ",
-    quick_links: "त्वरित लिंक",
-    sitemap: "साइटमैप",
-    important_links: "महत्वपूर्ण लिंक",
-    ministry_of_coal: "कोयला मंत्रालय",
-    coal_india_ltd: "कोल इंडिया लिमिटेड",
-    make_in_india: "मेक इन इंडिया",
-    mygov: "मायगव",
-    contact_us: "संपर्क करें",
-    company_name: "महानदी कोलफील्ड्स लिमिटेड",
-    mcl_bhawan: "एमसीएल भवन",
-    burla_sambalpur: "बुर्ला, संबलपुर",
-    odisha_pin: "ओडिशा - 768020",
-    follow_us: "हमें फॉलो करें",
-    customize_cookies: "कुकीज़ अनुकूलित करें",
-    cookie_usage: "यह वेबसाइट बेहतर उपयोगकर्ता अनुभव प्रदान करने के लिए कुकीज़ का उपयोग करती है।",
-    cookie_policy: "स्वीकार पर क्लिक करके, आप कुकी सेटिंग्स में उल्लिखित नीतियों से सहमत होते हैं।",
-    cookie_settings: "कुकी सेटिंग्स",
-    decline_cookies: "वैकल्पिक कुकीज़ अस्वीकार करें",
-    accept_all_cookies: "सभी कुकीज़ स्वीकार करें",
-    accept: "स्वीकार करें",
-    powering_growth: "भारत के विकास को गति देना",
-    mcl_commitment: "महानदी कोलफील्ड्स लिमिटेड सतत कोयला उत्पादन, ऊर्जा सुरक्षा सुनिश्चित करने और भारत के औद्योगिक विकास में योगदान देने के लिए प्रतिबद्ध है।"
-  }
-};
+// const translations = {
+//   en: {
+//     govt_of_india: "Government of India",
+//     bharat_sarkar: "Government of India",
+//     site_title: "Mahanadi Coalfields Limited",
+//     about_us: "About Us",
+//     english_option: "English",
+//     hindi_option: "Hindi",
+//     goi_enterprise: "A Government of India Enterprise",
+//     home: "Home",
+//     acts_heading: "ACTs",
+//     acts_tab: "ACTs",
+//     manuals_tab: "Manuals",
+//     rules_tab: "Rules",
+//     circulars_tab: "Circulars",
+//     standing_orders_tab: "Standing Orders",
+//     mou_tab: "MOU",
+//     policies_tab: "Policies",
+//     dop_tab: "DOP",
+//     staff_seniority_tab: "Staff Seniority List",
+//     posh_tab: "PoSH Act, 2013",
+//     wips_tab: "WIPS MCL",
+//     guidelines_tab: "Guidelines",
+//     vigilance_tab: "Vigilance Related",
+//     learn_more: "Learn More",
+//     sustainable_mining: "Sustainable Mining",
+//     sustainable_mining_desc: "Leading the way in environmentally responsible mining practices while maintaining high production standards.",
+//     our_approach: "Our Approach",
+//     community_development: "Community Development",
+//     community_development_desc: "Empowering local communities through comprehensive CSR initiatives and sustainable development programs.",
+//     csr_activities: "CSR Activities",
+//     announcements: "Announcements",
+//     welcome_msg: "Welcome to Mahanadi Coalfields Limited - A Government of India Enterprise",
+//     latest_tender: "Latest Tender: Supply of Mining Equipment - Last Date: 30th April 2024",
+//     recruitment_drive: "Recruitment Drive: Applications Open for Various Positions - Apply Now!",
+//     csr_initiative: "CSR Initiative: New Community Development Program Launched",
+//     safety_first: "Safety First: Annual Safety Week Celebration from 1st to 7th May 2024",
+//     about_mcl: "About MCL",
+//     about_mcl_desc: "Mahanadi Coalfields Limited (MCL) is one of the leading coal producing companies in India. It is a subsidiary of Coal India Limited, under the Ministry of Coal, Government of India. MCL is responsible for coal mining and production in the Mahanadi area, contributing significantly to the energy security and industrial development of the country. The company is committed to sustainable mining practices, community development, and environmental protection, maintaining a balance between energy needs and ecological preservation.",
+//     formation: "Formation",
+//     admin_setup: "Administrative Setup",
+//     board_of_directors: "Board of Directors",
+//     bioprofile_projects: "Bioprofile of Projects",
+//     corp_mgmt_policy: "Corporate Mgmt. Policy",
+//     manpower: "Manpower",
+//     coal_production: "Coal Production",
+//     productivity: "Productivity",
+//     offtake: "Offtake",
+//     safety: "Safety",
+//     payment_exchequer: "Payment to Exchequer",
+//     hq_departments: "HQ Departments",
+//     production_areas: "Production Areas",
+//     rti_act: "RTI Act",
+//     grievances: "Grievances",
+//     pg_portal: "PG Portal",
+//     samvaad_portal: "Samvaad Portal",
+//     news_media: "News & Media",
+//     notices: "Notices",
+//     public_relations: "Public Relations",
+//     info_bank: "Info Bank",
+//     careers: "Careers",
+//     tenders: "Tenders",
+//     quick_links: "Quick Links",
+//     sitemap: "Sitemap",
+//     important_links: "Important Links",
+//     ministry_of_coal: "Ministry of Coal",
+//     coal_india_ltd: "Coal India Limited",
+//     make_in_india: "Make in India",
+//     mygov: "MyGov",
+//     contact_us: "Contact Us",
+//     company_name: "Mahanadi Coalfields Limited",
+//     mcl_bhawan: "MCL Bhawan",
+//     burla_sambalpur: "Burla, Sambalpur",
+//     odisha_pin: "Odisha - 768020",
+//     follow_us: "Follow Us",
+//     customize_cookies: "Customize cookies",
+//     cookie_usage: "This website uses cookies to provide a better user experience.",
+//     cookie_policy: "By clicking accept, you agree to the policies outlined in the",
+//     cookie_settings: "Cookie Settings",
+//     decline_cookies: "Decline optional cookies",
+//     accept_all_cookies: "Accept all cookies",
+//     accept: "Accept",
+//     powering_growth: "Powering India's Growth",
+//     mcl_commitment: "Mahanadi Coalfields Limited is committed to sustainable coal production, ensuring energy security and contributing to India's industrial growth."
+//   },
+//   hi: {
+//     govt_of_india: "भारत सरकार",
+//     bharat_sarkar: "भारत सरकार",
+//     site_title: "महानदी कोलफील्ड्स लिमिटेड",
+//     about_us: "हमारे बारे में",
+//     english_option: "अंग्रे़ी",
+//     hindi_option: "हिंदी",
+//     goi_enterprise: "भारत सरकार का उपक्रम",
+//     home: "मुखपृष्ठ",
+//     acts_heading: "अधिनियम",
+//     acts_tab: "अधिनियम",
+//     manuals_tab: "मैनुअल",
+//     rules_tab: "नियम",
+//     circulars_tab: "परिपत्र",
+//     standing_orders_tab: "स्थायी आदेश",
+//     mou_tab: "एमओयू",
+//     policies_tab: "नीतियाँ",
+//     dop_tab: "डीओपी",
+//     staff_seniority_tab: "कर्मचारी वरिष्ठता सूची",
+//     posh_tab: "पॉश अधिनियम, 2013",
+//     wips_tab: "डब्ल्यूआईपीएस एमसीएल",
+//     guidelines_tab: "दिशानिर्देश",
+//     vigilance_tab: "सतर्कता संबंधित",
+//     learn_more: "और जानें",
+//     sustainable_mining: "सतत खनन",
+//     sustainable_mining_desc: "पर्यावरणीय रूप से जिम्मेदार खनन प्रथाओं में अग्रणी, उच्च उत्पादन मानकों के साथ।",
+//     our_approach: "हमारा दृष्टिकोण",
+//     community_development: "सामुदायिक विकास",
+//     community_development_desc: "समग्र सीएसआर पहलों और सतत विकास कार्यक्रमों के माध्यम से स्थानीय समुदायों को सशक्त बनाना।",
+//     csr_activities: "सीएसआर गतिविधियाँ",
+//     announcements: "घोषणाएँ",
+//     welcome_msg: "महानदी कोलफील्ड्स लिमिटेड में आपका स्वागत है - भारत सरकार का उपक्रम",
+//     latest_tender: "नवीनतम निविदा: खनन उपकरण की आपूर्ति - अंतिम तिथि: 30 अप्रैल 2024",
+//     recruitment_drive: "भर्ती अभियान: विभिन्न पदों के लिए आवेदन खुले हैं - अभी आवेदन करें!",
+//     csr_initiative: "सीएसआर पहल: नया सामुदायिक विकास कार्यक्रम शुरू",
+//     safety_first: "सुरक्षा पहले: वार्षिक सुरक्षा सप्ताह 1 से 7 मई 2024 तक",
+//     about_mcl: "एमसीएल के बारे में",
+//     about_mcl_desc: "महानदी कोलफील्ड्स लिमिटेड (एमसीएल) भारत की प्रमुख कोयला उत्पादक कंपनियों में से एक है। यह कोल इंडिया लिमिटेड की एक सहायक कंपनी है, जो कोयला मंत्रालय, भारत सरकार के अधीन है। एमसीएल महानदी क्षेत्र में कोयला खनन और उत्पादन के लिए जिम्मेदार है, जो देश की ऊर्जा सुरक्षा और औद्योगिक विकास में महत्वपूर्ण योगदान देता है। कंपनी सतत खनन प्रथाओं, सामुदायिक विकास और पर्यावरण संरक्षण के लिए प्रतिबद्ध है, जिससे ऊर्जा आवश्यकताओं और पारिस्थितिकी संरक्षण के बीच संतुलन बना रहे।",
+//     formation: "गठन",
+//     admin_setup: "प्रशासनिक सेटअप",
+//     board_of_directors: "निदेशक मंडल",
+//     bioprofile_projects: "परियोजनाओं की जीवनी",
+//     corp_mgmt_policy: "कॉर्पोरेट प्रबंधन नीति",
+//     manpower: "जनशक्ति",
+//     coal_production: "कोयला उत्पादन",
+//     productivity: "उत्पादकता",
+//     offtake: "ऑफटेक",
+//     safety: "सुरक्षा",
+//     payment_exchequer: "राजकोष को भुगतान",
+//     hq_departments: "मुख्यालय विभाग",
+//     production_areas: "उत्पादन क्षेत्र",
+//     rti_act: "सूचना का अधिकार अधिनियम",
+//     grievances: "शिकायतें",
+//     pg_portal: "पीजी पोर्टल",
+//     samvaad_portal: "संवाद पोर्टल",
+//     news_media: "समाचार और मीडिया",
+//     notices: "सूचनाएँ",
+//     public_relations: "जनसंपर्क",
+//     info_bank: "सूचना बैंक",
+//     careers: "करियर",
+//     tenders: "निविदाएँ",
+//     quick_links: "त्वरित लिंक",
+//     sitemap: "साइटमैप",
+//     important_links: "महत्वपूर्ण लिंक",
+//     ministry_of_coal: "कोयला मंत्रालय",
+//     coal_india_ltd: "कोल इंडिया लिमिटेड",
+//     make_in_india: "मेक इन इंडिया",
+//     mygov: "मायगव",
+//     contact_us: "संपर्क करें",
+//     company_name: "महानदी कोलफील्ड्स लिमिटेड",
+//     mcl_bhawan: "एमसीएल भवन",
+//     burla_sambalpur: "बुर्ला, संबलपुर",
+//     odisha_pin: "ओडिशा - 768020",
+//     follow_us: "हमें फॉलो करें",
+//     customize_cookies: "कुकीज़ अनुकूलित करें",
+//     cookie_usage: "यह वेबसाइट बेहतर उपयोगकर्ता अनुभव प्रदान करने के लिए कुकीज़ का उपयोग करती है।",
+//     cookie_policy: "स्वीकार पर क्लिक करके, आप कुकी सेटिंग्स में उल्लिखित नीतियों से सहमत होते हैं।",
+//     cookie_settings: "कुकी सेटिंग्स",
+//     decline_cookies: "वैकल्पिक कुकीज़ अस्वीकार करें",
+//     accept_all_cookies: "सभी कुकीज़ स्वीकार करें",
+//     accept: "स्वीकार करें",
+//     powering_growth: "भारत के विकास को गति देना",
+//     mcl_commitment: "महानदी कोलफील्ड्स लिमिटेड सतत कोयला उत्पादन, ऊर्जा सुरक्षा सुनिश्चित करने और भारत के औद्योगिक विकास में योगदान देने के लिए प्रतिबद्ध है।"
+//   }
+// };
 
-function changeLanguage(lang) {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-            console.log('Translated', key, 'to', translations[lang][key]);
-        }
-    });
-    document.getElementById('languageDropdown')?.classList.remove('show');
-    localStorage.setItem('lang', lang);
-}
+// function changeLanguage(lang) {
+//     document.querySelectorAll('[data-i18n]').forEach(el => {
+//         const key = el.getAttribute('data-i18n');
+//         if (translations[lang] && translations[lang][key]) {
+//             el.innerHTML = translations[lang][key];
+//             console.log('Translated', key, 'to', translations[lang][key]);
+//         }
+//     });
+//     document.getElementById('languageDropdown')?.classList.remove('show');
+//     localStorage.setItem('lang', lang);
+// }
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    // --- Language: Set preferred language on page load ---
-    const savedLang = localStorage.getItem('lang') || 'en';
-    changeLanguage(savedLang);
+    // // --- Language: Set preferred language on page load ---
+    // const savedLang = localStorage.getItem('lang') || 'en';
+    // changeLanguage(savedLang);
 
-    // --- Set language dropdown to saved language ---
-    const languageSelect = document.querySelector('#languageDropdown select');
-    if (languageSelect) {
-        languageSelect.value = savedLang;
-    }    // --- Announcements Pause Button ---
-    const pauseBtn = document.querySelector('.announcement-pause-btn');
-    const scrollContent = document.querySelector('.announcement-scroll');
+    // // --- Set language dropdown to saved language ---
+    // const languageSelect = document.querySelector('#languageDropdown select');
+    // if (languageSelect) {
+    //     languageSelect.value = savedLang;
+    // }    // --- Announcements Pause Button ---
+    // const pauseBtn = document.querySelector('.announcement-pause-btn');
+    // const scrollContent = document.querySelector('.announcement-scroll');
     
-    if (pauseBtn && scrollContent) {
-        // Initialize button state
-        const updatePauseButton = (isPaused) => {
-            pauseBtn.classList.toggle('paused', isPaused);
-            pauseBtn.setAttribute('title', isPaused ? 'Resume announcements' : 'Pause announcements');
-            pauseBtn.setAttribute('aria-label', isPaused ? 'Resume announcements' : 'Pause announcements');
-            scrollContent.classList.toggle('paused', isPaused);
-        };
+    // if (pauseBtn && scrollContent) {
+    //     // Initialize button state
+    //     const updatePauseButton = (isPaused) => {
+    //         pauseBtn.classList.toggle('paused', isPaused);
+    //         pauseBtn.setAttribute('title', isPaused ? 'Resume announcements' : 'Pause announcements');
+    //         pauseBtn.setAttribute('aria-label', isPaused ? 'Resume announcements' : 'Pause announcements');
+    //         scrollContent.classList.toggle('paused', isPaused);
+    //     };
 
-        pauseBtn.addEventListener('click', function() {
-            const willBePaused = !this.classList.contains('paused');
-            updatePauseButton(willBePaused);
-        });
+    //     pauseBtn.addEventListener('click', function() {
+    //         const willBePaused = !this.classList.contains('paused');
+    //         updatePauseButton(willBePaused);
+    //     });
 
-        // Initialize with running state
-        updatePauseButton(false);
-    }
+    //     // Initialize with running state
+    //     updatePauseButton(false);
+    // }
 
     // --- Slider logic ---
     const slides = document.querySelectorAll('.slider .slide');
@@ -751,8 +752,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.getElementById('sliderButton').addEventListener('click', function() {
-    const navigationSection = document.querySelector('.navigationSection');
-    navigationSection.style.transition = 'transform 0.5s ease';
-    navigationSection.style.transform = 'translateX(100%)'; // Adjust the value as needed
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const sliderButton = document.getElementById('sliderButton');
+//     sliderButton.addEventListener('click', function () {
+//         const navigationSection = document.querySelector('.navigationSection');
+//         navigationSection.style.transition = 'transform 0.5s ease';
+//         navigationSection.style.transform = 'translateX(100%)';
+//     });
+// });

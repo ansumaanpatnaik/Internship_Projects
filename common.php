@@ -1,6 +1,4 @@
-<?php
-// Common layout for reuse
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
